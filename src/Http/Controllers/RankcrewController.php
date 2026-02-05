@@ -108,6 +108,13 @@ class RankcrewController extends Controller
         // Read is_published from payload, default to true
         $is_published = isset($payload['is_published']) ? (bool) $payload['is_published'] : true;
 
+        if (!empty($category_id)) {
+            // Check if category actually exists
+            if (!BlogCategory::where('id', $category_id)->exists()) {
+                $category_id = null; // Reset to null to trigger fallback
+            }
+        }
+
         if (empty($category_id)) {
             $defaultCategory = BlogCategory::firstOrCreate(
                 ['slug' => 'general'],
