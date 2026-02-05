@@ -1,7 +1,7 @@
 {
     "name": "sirsquall/rankcrew",
     "description": "Provide the integartion module to work with rankcrew.ai",
-    "version": "1.8",
+    "version": "1.8.1",
     "type": "library",
     "license": "MIT",
     "autoload": {
