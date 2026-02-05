@@ -1,0 +1,29 @@
+{
+    "name": "rankcrew/laravel-client",
+    "description": "Provide the integartion module to work with rankcrew.ai",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "RankCrew\\Laravel\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RankCrew\\Laravel\\RankCrewServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "sir squall",
+            "email": "sir.squall.leonheart@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8.0",
+        "illuminate/support": "^10.0"
+    }
+}
