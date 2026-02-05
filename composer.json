@@ -1,6 +1,7 @@
 {
     "name": "sirsquall/rankcrew",
     "description": "Provide the integartion module to work with rankcrew.ai",
+    "version": "0.0.1-dev",
     "type": "library",
     "license": "MIT",
     "autoload": {
@@ -24,6 +25,6 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=8.0",
-        "illuminate/support": "^10.0"
+        "illuminate/support": "^10.0|^11.0|^12.0"
     }
 }
