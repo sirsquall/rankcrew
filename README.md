@@ -4,19 +4,9 @@ Official Laravel integration for [RankCrew.ai](https://rankcrew.ai).
 
 ## Installation
 
-1.  Add the repository to your `composer.json` (until published on Packagist):
-    ```json
-    "repositories": [
-        {
-            "type": "path",
-            "url": "./modules/rankcrew/laravel-client"
-        }
-    ]
-    ```
-
-2.  Require the package:
+1.  Require the package:
     ```bash
-    composer require rankcrew/laravel-client
+    composer require sirsquall/rankcrew
     ```
 
 3.  Run migrations:

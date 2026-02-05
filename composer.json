@@ -1,5 +1,5 @@
 {
-    "name": "rankcrew/laravel-client",
+    "name": "sirsquall/rankcrew",
     "description": "Provide the integartion module to work with rankcrew.ai",
     "type": "library",
     "license": "MIT",
