@@ -11,7 +11,16 @@ class RankCrewServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        $this->loadRoutesFrom(__DIR__ . '/../routes/api.php');
+        \Illuminate\Support\Facades\Route::group([
+            'middleware' => [
+                \Illuminate\Cookie\Middleware\EncryptCookies::class,
+                \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
+                \Illuminate\Session\Middleware\StartSession::class,
+            ],
+        ], function () {
+            $this->loadRoutesFrom(__DIR__ . '/../routes/api.php');
+        });
+
         $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
     }
 
